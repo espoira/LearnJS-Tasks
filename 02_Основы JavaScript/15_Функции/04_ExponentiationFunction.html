@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="ExponentiationFunction.js"></script>
+  </head>
+ 
+  <body>
+
+	<script>
+	
+	  let x = +prompt("Введите число x:", '');
+	  let n = +prompt("Введите показатель степени n:", '');
+
+	  if (n < 1) {
+	    alert(`Число ${n} должно быть натуральным`);
+	  } else {
+	    alert('Результат возведения ' +
+        	 `числа ${x} в степень ${n}:   ` + pow(x, n) );
+	  }
+	  
+	</script>
+
+  </body>
+ 
+</html>
