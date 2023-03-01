@@ -1,0 +1,14 @@
+function getAverageAge(users) {
+	
+  let r = users.reduce( (prev, user) => prev + user.age, 0 );
+  return r / users.length;
+  
+}
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 29 };
+
+let arr = [vasya, petya, masha];
+
+alert( getAverageAge(arr) ); // 28
