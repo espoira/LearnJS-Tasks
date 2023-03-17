@@ -1,0 +1,14 @@
+<!--
+  Различия между getComputedStyle(elem).width и elem.clientWidth:
+  
+  1. getComputedStyle(elem).width возвращает строку "[величина ширины]px", 
+     а clientWidth - значение в виде числа.
+	 
+  2. getComputedStyle(elem).width не учитывает внутренние отступы padding, 
+     то есть это ширина именно внутренней области элемента, 
+	 а значение clientWidth включает в себя также и внутренние отступы padding.
+	 
+  3. getComputedStyle(elem).width в отличие от clientWidth в некоторых случаях может возвращать 
+     не конкретное значение ширины, а, например, для строчных элементов css-значение "auto".
+  
+-->

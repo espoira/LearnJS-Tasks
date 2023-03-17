@@ -1,0 +1,13 @@
+<ul id="ul">
+  <li id="one">1</li>
+  <li id="two">4</li>
+</ul>
+
+<!-- Для вставки <li>2</li><li>3</li> между двумя <li> в данном списке 
+удобно использовать следующий скрипт -->
+
+<script>
+  one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');
+  //Или:
+  //two.insertAdjacentHTML('beforebegin', '<li>2</li><li>3</li>');
+</script>

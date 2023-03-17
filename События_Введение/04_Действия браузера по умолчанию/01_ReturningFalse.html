@@ -1,0 +1,12 @@
+﻿<script>
+  function handler() {
+    alert("...");
+    return false;
+  }
+</script>
+
+<!--a href="https://w3.org" onclick="handler()">браузер откроет w3.org</a-->
+
+<!-- Для того, чтобы браузер не переходил по указанной ссылке, используем код: -->
+
+<a href="https://w3.org" onclick="return handler()">w3.org</a>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="button" value="Show Message">
+
+    <script>
+	  let button = document.querySelector('input');
+	
+      button.addEventListener("click", () => alert("1"));
+
+      button.removeEventListener("click", () => alert("1"));
+
+      button.onclick = () => alert(2);  
+    </script>
+
+  </body>
+</html>
+
+<!--
+При нажатии на кнопку поочерёдно срабатывают оба обработчика.
+
+Сначала первый, заданный в addEventListener, который далее на самом деле 
+не удаляется, поскольку здесь в removeEventListener в качестве параметра 
+передаётся не ссылка на определённую функцию-обработчик с конкретным именем, 
+а новая функция (хотя и выполняющая те же самые действия).
+
+Затем независимо срабатывает событие, назначенное кнопке через DOM-свойство.
+
+В результате при выполнении скрипта на экран выводятся сообщения 1 и 2.
+-->

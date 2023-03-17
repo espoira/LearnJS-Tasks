@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  
+  <body>
+    <h2>Динамически создаваемый список:</h2>
+
+    <script>
+	
+      let list = document.createElement('ul');
+      document.body.append(list);
+
+      while (true) {
+        let text = prompt('Введите текст для элемента списка', '');
+
+        if (!text) {
+          break;
+        }
+
+        let item = document.createElement('li');
+        item.textContent = text;
+        list.append(item);
+      }
+	  
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  margin: 10px auto;
+  width: 470px;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 0.3em;
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+.pane {
+  background: #edf5e1;
+  padding: 10px 20px;
+  border-top: solid 2px #c4df9b;
+}
+
+.remove-button {
+  width: 24px;
+  height: 24px;
+  float: right;
+  font-size: 1.1em;
+  color: darkred;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  color: red;
+}
